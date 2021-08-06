@@ -1,0 +1,106 @@
+/* Reset ---------------------------------- */
+address, article, aside, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+[hidden], command, datalist, menu[type=context], rp, source {
+  display: none;
+}
+
+body {
+  background: #fff;
+  font-family: sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #313131;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol, dl {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+dd {
+  margin: 0;
+}
+
+p {
+  line-height: 2;
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  font-size: inherit;
+
+   > caption {
+    text-align: left;
+  }
+
+  th {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+
+  td {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+form {
+  margin: 0;
+  padding: 0;
+}
+
+input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+img, picture {
+  border: none;
+  display: block;
+  vertical-align: bottom;
+  width: 100%;
+  height: auto;
+
+  backface-visibility: hidden;
+}
+
+pre {
+  border: 1px solid #bfbfbf;
+  padding: 5px;
+}
+
+.gist {
+  width: 100%;
+}
+
+
+/* Clearing ---------------------------------- */
+
+.group::after,
+.entry-content::after {
+	clear: both;
+	content: "";
+	display: block;
+}
